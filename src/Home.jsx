@@ -88,15 +88,13 @@ function Home() {
         
       </div>
       
-      {/* Subtle hover overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-white/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>         </div>
           <div className="motion-preset-blur-up-md motion-preset-rebound-up relative col-span-5 col-start-5  row-span-1 row-start-1 gap-6 overflow-hidden rounded-xl bg-white/75 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 motion-delay-100 dark:bg-muted/80 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:col-span-3 md:col-start-3 md:row-span-1 transition-transform duration-300 hover:scale-105">
-          
-        <div className="absolute top-0 left-42 w-full h-full flex items-center">
-          <div className="scale-200">
-            <SpinningGlobe />
-          </div>
-        </div>
+<div className="absolute inset-0 w-full h-full flex items-center justify-center md:justify-end md:pr-5">
+  <div className="scale-200 md:scale-180">
+    <SpinningGlobe />
+  </div>
+</div>
     <div className="flex flex-col justify-between h-full relative z-10">
       <div className="flex flex-col justify-start gap-1">
         <div className="flex gap-1">
@@ -117,7 +115,7 @@ function Home() {
           </div>
           <div className="motion-preset-blur-up-md motion-delay-250 motion-preset-rebound-up relative col-span-5 col-start-1 row-start-3 flex justify-center overflow-hidden rounded-xl bg-white/75 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-muted/80 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:col-span-2 md:col-start-6 md:row-start-1 md:h-40 transition-transform duration-300 hover:scale-105">
   <div className="absolute bottom-1.5 left-1/2 transform -translate-x-1/2 z-30 flex w-[70%] justify-center rounded-full border border-zinc-200/10 bg-white/40 py-0.5 backdrop-blur-sm dark:border-white/5 dark:bg-muted/40">
-    <p>Favourite tech</p>
+    <p className="text-sm">Favourite tech</p>
           </div>
           <div className=" flex h-full w-full flex-wrap justify-between sm:gap-2">
             <div className="relative flex h-16 w-16 sm:h-18 sm:w-18 md:h-11 md:w-11 tech-icon">
