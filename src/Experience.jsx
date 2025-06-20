@@ -66,7 +66,7 @@ merging fixes into the main branch.</p>
         <h1 className="text-xl font-medium pb-3">Volunteer Experience</h1>
         <p className="pb-7">Non-professional work experience (clubs, volunteer work).</p>
     </div>
-    <div className="max-w-3xl mx-auto px-4 flex justify-center flex-col gap-11 pb-20">
+    <div className="max-w-3xl mx-auto px-4 flex justify-center flex-col gap-11">
     <div className="relative w-full overflow-hidden rounded-xl bg-white/75 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-muted/80 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:p-6 motion-preset-blur-up-md motion-delay-0 transition-transform duration-300 hover:scale-105">
     <div className="flex justify-between items-center">
     <img src={GDSC} height="50" width="60" className="pb-1"></img>
