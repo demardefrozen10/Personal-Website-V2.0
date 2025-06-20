@@ -1,6 +1,6 @@
 import Experience from './Experience.jsx';
 import Home from './Home.jsx';
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import Logo from './Logo.jsx';
 import Projects from './Projects.jsx';
 
