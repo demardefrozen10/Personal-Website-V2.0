@@ -3,10 +3,11 @@ import Home from './Home.jsx';
 import { HashRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import Logo from './Logo.jsx';
 import Projects from './Projects.jsx';
-
+import ScrollToTop from './ScrollToTop.jsx';
 export default function Navigation() {
     return <>
     <Router>
+        <ScrollToTop/>
          <div className="fixed inset-x-4 top-7 z-40">
       <div className="absolute inset-0 bg-gradient-to-b from-white/75 to-white/0 dark:from-zinc-900/75 dark:to-zinc-900/0" />
       <nav className="fixed inset-x-4 top-7 z-40 mx-auto flex max-w-3xl items-center justify-between gap-2 overflow-hidden rounded-full border border-zinc-900/5 bg-white/80 px-7 py-4 shadow backdrop-blur-md dark:border-white/5 dark:bg-zinc-900/80">
