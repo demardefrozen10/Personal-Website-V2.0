@@ -12,10 +12,10 @@ import Gui from './assets/gui.png';
 
 export default function Projects() {
     return <>
-     <div className="max-w-3xl mx-auto px-4 pt-32">
-            <h1 className="text-xl font-medium pb-3">Projects</h1>
-            <p className="pb-7">List of projects I have worked on. You can find out more on my Github.</p>
-        </div>
+        <div className="max-w-3xl mx-auto px-4 pt-32">
+        <h1 className="text-xl font-medium pb-3">Projects</h1>
+        <p className="pb-7">Here are some projects I've worked on that best interest me!</p>
+    </div>
         <div className="max-w-3xl mx-auto px-4 flex justify-center flex-col gap-11 mb-20">
         <div className="relative w-full overflow-hidden rounded-xl bg-white/75 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-muted/80 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 motion-preset-blur-up-md motion-delay-0 transition-transform duration-300 hover:scale-105">
         <img src={NBA2KSquadFinder}></img>
