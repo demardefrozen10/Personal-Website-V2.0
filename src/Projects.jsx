@@ -33,7 +33,7 @@ export default function Projects() {
         <div className="flex justify-center items-center gap-2">
         <img src={Typescript} width="29" height="40"></img>
         <img src={Net} width="29" height="40"></img>
-        <img src={Tailwind} width="29" height="40" className="mr-5"></img>
+        <img src={Tailwind} width="29" height="40"></img>
         <a href="https://github.com/demardefrozen10/2KMatchmaker" target="_blank" rel="noopener noreferrer">
         <button className={`${context.theme ? "dark" : ""} cursor-pointer inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-500/20 hover:bg-gray-500/10 h-10 px-4 py-2 relative rounded-full dark:bg-neutral-800`}>
         <img src={context.theme ? GitHubWhite : Github} width="20"></img>
@@ -53,7 +53,7 @@ export default function Projects() {
         <div className="flex justify-center items-center gap-2">
         <img src={Typescript} width="29" height="40"></img>
         <img src={Figma} width="29" height="40"></img>
-        <img src={Tailwind} width="29" height="40" className="mr-5"></img>
+        <img src={Tailwind} width="29" height="40"></img>
         <a href="https://g1test.testdriveds.ca/" target="_blank" rel="noopener noreferrer">
         <button className={`${context.theme ? "dark" : ""} cursor-pointer inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-500/20 hover:bg-gray-500/10 h-10 px-4 py-2 relative rounded-full dark:bg-neutral-800`}>
         <img src={context.theme ? ExternalLinkLite : ExternalLink} width="20"></img>
@@ -71,7 +71,7 @@ export default function Projects() {
         <p className={`${context.theme ? "dark" : ""} text-lg font-medium dark:text-neutral-300`}>HungryLions</p>
         <div className="flex justify-center items-center gap-2">
         <img src={Java} width="29" height="40"></img>
-        <img src={context.theme ? SQLiteDark : SQLite} width="29" height="40" className="mr-5"></img>
+        <img src={context.theme ? SQLiteDark : SQLite} width="29" height="40"></img>
         <a href="https://github.com/demardefrozen10/HungryLions" target="_blank" rel="noopener noreferrer">
         <button className={`${context.theme ? "dark" : ""} cursor-pointer inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-500/20 hover:bg-gray-500/10 h-10 px-4 py-2 relative rounded-full dark:bg-neutral-800`}>
         <img src={context.theme ? GitHubWhite : Github} width="20"></img>
