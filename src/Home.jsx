@@ -18,11 +18,21 @@ import Spark from '../src/assets/spark.svg'
 import Spotify from '../src/assets/icons8-spotify.svg'
 import Turtle from '../src/assets/bright-turtle.png'
 import Globe from '../src/assets/globe.png'
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Time from '../src/assets/Time.png'
 import SpinningGlobe from './SpinningGlobe.jsx'
+import { ThemeContext } from './ThemeContext.jsx';
+import WhitePython from '../src/assets/pythonwhite.svg'
+import WhiteScala from '../src/assets/scalawhite.svg'
+import WhiteTime from '../src/assets/whiteTime.png'
+import WhiteGlobe from '../src/assets/whiteGlobe.png'
+import BlackGithub from '../src/assets/github-mark.svg'
+
 
 function Home() {
+
+   const context = useContext(ThemeContext);
+
 
    const settings = {
     dots: true,
@@ -52,20 +62,19 @@ function Home() {
     const interval = setInterval(() => {
       const now = new Date();
       setCurrentTime(now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
-    }, 1000 * 60); // update every minute
+    }, 1000 * 60);
     return () => clearInterval(interval);
   }, []);
-
 
 
   return (
     <>
         <main className="max-w-3xl mx-auto px-4 pt-32">
-          <h1 className="text-xl font-medium pb-3 ml-2 flex flex-col md:flex-row md:items-center gap-2">Hello there [name], welcome to my page!  <img src={Turtle} width="40" className="ml-2"></img> </h1>
-          <p className="ml-2 text-md"> I'm an inspiring Software Engineer currently studying Computer Science at York University. I love working on projects that create a everlasting impact on thousands of users. Currently, I am learning best system design practices and more about AI.
+          <h1 className={`text-xl font-medium pb-3 ml-2 flex flex-col md:flex-row md:items-center gap-2${context.theme ? " text-white" : ""}`}>Hello there [name], welcome to my page!  <img src={Turtle} width="40" className="ml-2"></img> </h1>
+          <p className={`ml-2 text-md${context.theme ? " text-white" : ""}`}> I'm an inspiring Software Engineer currently studying Computer Science at York University. I love working on projects that create a everlasting impact on thousands of users. Currently, I am learning best system design practices and more about AI.
           </p>
           <div className="grid gap-6 md:grid-cols-7 md:grid-rows-2 mt-5 ml-2">
-          <div className="motion-preset-blur-up-md motion-delay-100 relative col-span-4 row-span-1 row-start-1 h-full overflow-hidden rounded-xl ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:col-span-2 md:col-start-1 md:row-span-2 md:h-full transition-transform duration-300 hover:scale-105">
+          <div className={`${context.theme ? "dark" : ""} motion-preset-blur-up-md motion-delay-100 relative col-span-4 row-span-1 row-start-1 h-full overflow-hidden rounded-xl ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:col-span-2 md:col-start-1 md:row-span-2 md:h-full transition-transform duration-300 hover:scale-105`}>
       <div className="relative z-10 flex flex-col items-center justify-center h-full p-6 text-center">
         
         <div className="relative mb-4">
@@ -74,22 +83,22 @@ function Home() {
           </div>
         </div>
         
-        <h2 className="text-lg md:text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
+        <h2 className={`${context.theme ? "dark" : ""} text-lg md:text-xl font-semibold text-gray-800 dark:text-white mb-2`}>
           Jason Deng
         </h2>
         
-        <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3 leading-relaxed">
+        <p className={`${context.theme ? "dark" : ""} text-sm md:text-base text-gray-600 dark:text-white mb-3 leading-relaxed${context.theme ? " text-white" : ""}`}>
           Aspiring Software Engineer
         </p>
         
-        <div className="text-xs text-gray-500 dark:text-gray-500">
+        <div className={`${context.theme ? "dark" : ""} text-xs text-gray-500 dark:text-gray-500${context.theme ? " text-white" : ""}`}>
           York University CS 2027
         </div>
         
       </div>
       
       <div className="absolute inset-0 bg-gradient-to-t from-white/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>         </div>
-          <div className="motion-preset-blur-up-md motion-preset-rebound-up relative col-span-5 col-start-5  row-span-1 row-start-1 gap-6 overflow-hidden rounded-xl bg-white/75 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 motion-delay-100 dark:bg-muted/80 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:col-span-3 md:col-start-3 md:row-span-1 transition-transform duration-300 hover:scale-105">
+          <div className={`${context.theme ? "dark" : ""} motion-preset-blur-up-md motion-preset-rebound-up relative col-span-5 col-start-5  row-span-1 row-start-1 gap-6 overflow-hidden rounded-xl bg-white/75 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 motion-delay-100 dark:bg-black dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:col-span-3 md:col-start-3 md:row-span-1 transition-transform duration-300 hover:scale-105`}>
 <div className="absolute inset-0 w-full h-full flex items-center justify-center md:justify-end md:pr-5">
   <div className="scale-200 md:scale-180">
     <SpinningGlobe />
@@ -98,25 +107,25 @@ function Home() {
     <div className="flex flex-col justify-between h-full relative z-10">
       <div className="flex flex-col justify-start gap-1">
         <div className="flex gap-1">
-      <img src={Globe} width="20" height="20"></img><p className="text-sm">Toronto, Canada</p>
+      <img src={context.theme ? WhiteGlobe : Globe} width="20" height="20"></img><p className={`text-sm ${context.theme ? "text-white" : ""}`}>Toronto, Canada</p>
       </div>
       <div className="flex gap-1">
-      <img src={Time} width="20" height="20"></img><p className="text-sm">{currentTime}</p>
+      <img src={context.theme ? WhiteTime : Time} width="20" height="20"></img><p className={`text-sm ${context.theme ? "text-white" : ""}`}>{currentTime}</p>
       </div>
       </div>
-    <div className="flex w-auto max-w-fit justify-start rounded-full border border-zinc-200/10 bg-white/40 backdrop-blur-sm dark:border-white/5 dark:bg-muted/40">
-  <img src={Spotify} className="h-8 w-8 mr-2"></img>
-  <div className="flex flex-col justify-center items-start">
-    <p className="text-xs whitespace-nowrap">Currently not</p>
-    <p className="text-xs whitespace-nowrap">listening to music</p>
+    <div className={`${context.theme ? "dark" : ""} flex w-auto max-w-fit justify-start rounded-full border border-zinc-200/10 bg-white/75 backdrop-blur-sm dark:border-white/5 dark:bg-black`}>
+      <img src={Spotify} className="h-8 w-8 mr-2"></img>
+      <div className="flex flex-col justify-center items-start">
+        <p className={`text-xs whitespace-nowrap ${context.theme ? "text-white" : ""}`}>Currently not</p>
+        <p className={`text-xs whitespace-nowrap ${context.theme ? "text-white" : ""}`}>listening to music</p>
+      </div>
+    </div>
+          </div>
+          </div>
+          <div className={`${context.theme ? "dark" : ""} motion-preset-blur-up-md motion-delay-250 motion-preset-rebound-up relative col-span-5 col-start-1 row-start-3 flex justify-center overflow-hidden rounded-xl bg-white/75 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-black dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:col-span-2 md:col-start-6 md:row-start-1 md:h-40 transition-transform duration-300 hover:scale-105`}>
+  <div className={`${context.theme ? "dark" : ""} absolute bottom-1.5 left-1/2 transform -translate-x-1/2 z-30 flex w-[70%] justify-center rounded-full border border-zinc-200/10 bg-white/40 py-0.5 backdrop-blur-sm dark:border-white/5 dark:bg-muted/40`}>
+    <p className={`text-sm ${context.theme ? "text-white" : ""}`}>Favourite tech</p>
   </div>
-</div>
-          </div>
-          </div>
-          <div className="motion-preset-blur-up-md motion-delay-250 motion-preset-rebound-up relative col-span-5 col-start-1 row-start-3 flex justify-center overflow-hidden rounded-xl bg-white/75 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-muted/80 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:col-span-2 md:col-start-6 md:row-start-1 md:h-40 transition-transform duration-300 hover:scale-105">
-  <div className="absolute bottom-1.5 left-1/2 transform -translate-x-1/2 z-30 flex w-[70%] justify-center rounded-full border border-zinc-200/10 bg-white/40 py-0.5 backdrop-blur-sm dark:border-white/5 dark:bg-muted/40">
-    <p className="text-sm">Favourite tech</p>
-          </div>
           <div className=" flex h-full w-full flex-wrap justify-between sm:gap-2">
             <div className="relative flex h-16 w-16 sm:h-18 sm:w-18 md:h-11 md:w-11 tech-icon">
             <img src={Docker}></img>
@@ -128,7 +137,7 @@ function Home() {
           <img src={React}></img>
             </div>
             <div className="relative flex h-16 w-16 sm:h-18 sm:w-18 md:h-11 md:w-11 tech-icon">
-          <img src={Python}></img>
+          <img src={context.theme ? WhitePython : Python}></img>
             </div>
             <div className="relative flex h-16 w-16 sm:h-18 sm:w-18 md:h-11 md:w-11 tech-icon">
           <img src={Javascript}></img>
@@ -137,7 +146,7 @@ function Home() {
           <img src={Typescript}></img>
             </div>
             <div className="relative flex h-16 w-16 sm:h-18 sm:w-18 md:h-11 md:w-11 tech-icon">
-          <img src={Scala}></img>
+          <img src={context.theme ? WhiteScala : Scala}></img>
             </div>
             <div className="relative flex h-16 w-16 sm:h-18 sm:w-18 md:h-11 md:w-11 tech-icon">   
           <img src={Spark}></img>
@@ -148,7 +157,7 @@ function Home() {
           </div>
           </div>
           <div className="col-span-4 col-start-6 row-start-3 flex h-full flex-col justify-between gap-6 md:col-span-2 md:col-start-3 md:row-start-2">
-          <a href="https://www.linkedin.com/in/jason-deng10/" target="_blank" rel="noopener noreferrer" className="bg-blue-800 motion-preset-blur-up-md motion-delay-150 motion-preset-rebound-up relative col-span-2 col-start-3 row-start-2 h-full w-full gap-6 overflow-hidden rounded-xl p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 transition-transform duration-300 hover:scale-105">
+          <a href="https://www.linkedin.com/in/jason-deng10/" target="_blank" rel="noopener noreferrer" className={`${context.theme ? "dark" : ""} bg-blue-800 motion-preset-blur-up-md motion-delay-150 motion-preset-rebound-up relative col-span-2 col-start-3 row-start-2 h-full w-full gap-6 overflow-hidden rounded-xl p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 transition-transform duration-300 hover:scale-105`}>
             <a className="flex items-center justify-center gap-2 mt-1">
           <img 
               src={LinkedinIcon} 
@@ -158,20 +167,20 @@ function Home() {
             <p className="hidden md:flex md:text-sm text-white mt-0.5">Linkedin</p>
             </a>
           </a>
-          <a href="https://github.com/demardefrozen10" target="_blank" rel="noopener noreferrer" className="bg-black motion-preset-blur-up-md motion-delay-150 motion-preset-rebound-up relative col-span-2 col-start-3 row-start-2 h-full w-full gap-6 overflow-hidden rounded-xl p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 transition-transform duration-300 hover:scale-105">
+          <a href="https://github.com/demardefrozen10" target="_blank" rel="noopener noreferrer" className={`${context.theme ? "dark" : ""} dark:bg-white bg-black motion-preset-blur-up-md motion-delay-150 motion-preset-rebound-up relative col-span-2 col-start-3 row-start-2 h-full w-full gap-6 overflow-hidden rounded-xl p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 transition-transform duration-300 hover:scale-105`}>
           <a className="flex items-center justify-center gap-2 mt-1">
           <img 
-              src={GithubIcon} 
+              src={context.theme ? BlackGithub : GithubIcon} 
               alt="Github" 
               className="h-8 w-8 shrink-0 md:h-5 md:w-5"
             />          
-            <p className="hidden md:flex md:text-sm text-white mt-0.5">Github</p>
+            <p className={`hidden md:flex md:text-sm text-white mt-0.5 dark:text-black`}>Github</p>
             </a>
 
           </a>
           </div>
-          <a href="#/projects" className="motion-preset-blur-up-md motion-delay-150 motion-preset-rebound-up relative col-span-9 col-start-1 row-span-1 row-start-2 flex h-full max-h-56 cursor-pointer gap-6 overflow-hidden rounded-xl bg-white/75 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-muted/80 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:col-span-3 md:col-start-5 md:row-start-2 md:h-40 transition-transform duration-300 hover:scale-105">
-  <a className="absolute bottom-2 left-1/2 transform -translate-x-1/2 z-30 flex w-[85%] justify-center rounded-full border border-zinc-200/10 bg-white/40 py-0.5 backdrop-blur-sm dark:border-white/5 dark:bg-muted/40 md:text-sm">
+          <a href="#/projects" className={`${context.theme ? "dark" : ""} motion-preset-blur-up-md motion-delay-150 motion-preset-rebound-up relative col-span-9 col-start-1 row-span-1 row-start-2 flex h-full max-h-56 cursor-pointer gap-6 overflow-hidden rounded-xl bg-white/75 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-muted/80 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:col-span-3 md:col-start-5 md:row-start-2 md:h-40 transition-transform duration-300 hover:scale-105`}>
+  <a className={`${context.theme ? "dark" : ""} absolute bottom-2 left-1/2 transform -translate-x-1/2 z-30 flex w-[85%] justify-center rounded-full border border-zinc-200/10 bg-white/40 py-0.5 backdrop-blur-sm dark:border-white/5 dark:bg-muted/40 md:text-sm`}>
             <p className="text-md">My projects</p>
           </a>
           <Slider {...settings} className="w-full">

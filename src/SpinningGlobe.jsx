@@ -1,16 +1,19 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useContext } from "react";
 import Globe from "react-globe.gl";
 import { MeshLambertMaterial, DoubleSide } from "three";
 import * as topojson from "topojson-client";
+import { ThemeContext } from './ThemeContext.jsx';
 
-const polygonsMaterial = new MeshLambertMaterial({
-  color: "darkslategrey",
-  side: DoubleSide,
-});
-
+// Move material creation inside component to make it dynamic
 export default function SpinningGlobe() {
+  const context = useContext(ThemeContext);
   const globeEl = useRef();
   const [landPolygons, setLandPolygons] = useState([]);
+
+  const polygonsMaterial = new MeshLambertMaterial({
+    color: context.theme ? "white" : "darkslategrey",
+    side: DoubleSide,
+  });
 
   useEffect(() => {
     fetch("//unpkg.com/world-atlas/land-110m.json")
