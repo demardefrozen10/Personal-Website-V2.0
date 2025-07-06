@@ -78,7 +78,7 @@ merging fixes into the main branch.</p>
         <div className={`${context.theme ? "dark" : ""} relative w-full overflow-hidden rounded-xl bg-white/75 dark:bg-zinc-900/90 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-black dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:p-6 motion-preset-blur-up-md motion-delay-0 transition-transform duration-300 hover:scale-105`}>
     <div className="flex justify-between items-center">
     <img src={CSHub} height="50" width="60" className="pb-1"></img>
-    <p className={`${context.theme ? "dark" : ""} dark:text-neutral-200`}>Sept 2023 - May 2024</p>
+    <p className={`${context.theme ? "dark" : ""} dark:text-neutral-200`}>June 2025 - Present</p>
     </div>
     <h1 className={`${context.theme ? "dark" : ""} pb-1 dark:text-white`}>Technical Director</h1>
     <p className={`${context.theme ? "dark" : ""} dark:text-neutral-200`}>CS Hub • Club Executive</p>
