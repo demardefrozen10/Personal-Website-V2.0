@@ -35,11 +35,11 @@ export default function Projects() {
         <p className={`${context.theme ? "dark" : ""} text-lg font-medium dark:text-neutral-300`}>RateMySupps (In-Progress)</p>
         <div className="flex justify-center items-center gap-2">
         <img src={Typescript} width="29" height="40"></img>
-        <img src={SpringBoot} width="29" height="40"></img>
+        <img src={SpringBoot} width="20" height="30"></img>
         <img src={Tailwind} width="29" height="40"></img>
         <a href="https://github.com/demardefrozen10/RateMySupps" target="_blank" rel="noopener noreferrer">
         <button className={`${context.theme ? "dark" : ""} cursor-pointer inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-500/20 hover:bg-gray-500/10 h-10 px-4 py-2 relative rounded-full dark:bg-neutral-800`}>
-        <img src={context.theme ? GitHubWhite : Github} width="20"></img>
+        <img src={context.theme ? GitHubWhite : Github} className="w-5 h-5 min-w-[20px] min-h-[20px]" style={{width: '20px', height: '20px'}} alt="GitHub" />
         </button>
         </a>
         </div>
@@ -62,7 +62,7 @@ export default function Projects() {
         <img src={Tailwind} width="29" height="40"></img>
         <a href="https://github.com/demardefrozen10/2KMatchmaker" target="_blank" rel="noopener noreferrer">
         <button className={`${context.theme ? "dark" : ""} cursor-pointer inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-500/20 hover:bg-gray-500/10 h-10 px-4 py-2 relative rounded-full dark:bg-neutral-800`}>
-        <img src={context.theme ? GitHubWhite : Github} width="20"></img>
+        <img src={context.theme ? GitHubWhite : Github} className="w-5 h-5 min-w-[20px] min-h-[20px]" style={{width: '20px', height: '20px'}} alt="GitHub" />
         </button>
         </a>
         </div>
@@ -100,7 +100,7 @@ export default function Projects() {
         <img src={context.theme ? SQLiteDark : SQLite} width="29" height="40"></img>
         <a href="https://github.com/demardefrozen10/HungryLions" target="_blank" rel="noopener noreferrer">
         <button className={`${context.theme ? "dark" : ""} cursor-pointer inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-500/20 hover:bg-gray-500/10 h-10 px-4 py-2 relative rounded-full dark:bg-neutral-800`}>
-        <img src={context.theme ? GitHubWhite : Github} width="20"></img>
+        <img src={context.theme ? GitHubWhite : Github} className="w-5 h-5 min-w-[20px] min-h-[20px]" style={{width: '20px', height: '20px'}} alt="GitHub" />
         </button>
         </a>
         </div>
