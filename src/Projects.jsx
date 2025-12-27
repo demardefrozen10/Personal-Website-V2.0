@@ -16,7 +16,10 @@ import SQLiteDark from '../src/assets/sqlitelite.png';
 import ExternalLinkLite from '../src/assets/externallinklight.png';
 import SpringBoot from '../src/assets/springboot.png';
 import WIP from "../src/assets/imglarge.jpg";
-
+import Docker from '../src/assets/docker.png';
+import AWS from '../src/assets/aws.png';
+import AWSLight from '../src/assets/awslight.png';
+import RateMySupps from '../src/assets/ratemysupps.png';
 export default function Projects() {
 
     const context = useContext(ThemeContext);
@@ -29,7 +32,7 @@ export default function Projects() {
     </div>
         <div className="max-w-3xl mx-auto px-4 flex justify-center flex-col gap-11">
               <div className={`${context.theme ? "dark" : ""} relative w-full overflow-hidden rounded-xl bg-white/75 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-black dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 motion-preset-blur-up-md motion-delay-0 transition-transform duration-300 hover:scale-105`}>
-        <img src={WIP}></img>
+        <img src={RateMySupps}></img>
         <div className="flex flex-col m-5 gap-3">
             <div className="flex justify-between items-center">
         <p className={`${context.theme ? "dark" : ""} text-lg font-medium dark:text-neutral-300`}>RateMySupps (In-Progress)</p>
@@ -37,6 +40,8 @@ export default function Projects() {
         <img src={Typescript} width="29" height="40"></img>
         <img src={SpringBoot} width="20" height="30"></img>
         <img src={Tailwind} width="29" height="40"></img>
+        <img src={Docker} width="29" height="40"></img>
+        <img src={context.theme ? AWSLight : AWS} width="29" height="40"></img>
         <a href="https://github.com/demardefrozen10/RateMySupps" target="_blank" rel="noopener noreferrer">
         <button className={`${context.theme ? "dark" : ""} cursor-pointer inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-500/20 hover:bg-gray-500/10 h-10 px-4 py-2 relative rounded-full dark:bg-neutral-800`}>
         <img src={context.theme ? GitHubWhite : Github} className="w-5 h-5 min-w-[20px] min-h-[20px]" style={{width: '20px', height: '20px'}} alt="GitHub" />
