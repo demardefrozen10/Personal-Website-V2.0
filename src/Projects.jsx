@@ -39,7 +39,6 @@ export default function Projects() {
         <div className="flex justify-center items-center gap-2">
         <img src={Typescript} width="29" height="40"></img>
         <img src={SpringBoot} width="20" height="30"></img>
-        <img src={Tailwind} width="29" height="40"></img>
         <img src={Docker} width="29" height="40"></img>
         <img src={context.theme ? AWSLight : AWS} width="29" height="40"></img>
         <a href="https://github.com/demardefrozen10/RateMySupps" target="_blank" rel="noopener noreferrer">
