@@ -15,7 +15,6 @@ import GitHubWhite from '../src/assets/github-mark-white.svg';
 import SQLiteDark from '../src/assets/sqlitelite.png';
 import ExternalLinkLite from '../src/assets/externallinklight.png';
 import SpringBoot from '../src/assets/springboot.png';
-import WIP from "../src/assets/imglarge.jpg";
 import Docker from '../src/assets/docker.png';
 import AWS from '../src/assets/aws.png';
 import AWSLight from '../src/assets/awslight.png';
@@ -35,15 +34,15 @@ export default function Projects() {
         <img src={RateMySupps}></img>
         <div className="flex flex-col m-5 gap-3">
             <div className="flex justify-between items-center">
-        <p className={`${context.theme ? "dark" : ""} text-lg font-medium dark:text-neutral-300`}>RateMySupps (In-Progress)</p>
+        <p className={`${context.theme ? "dark" : ""} text-lg font-medium dark:text-neutral-300`}>RateMySuppplement</p>
         <div className="flex justify-center items-center gap-2">
         <img src={Typescript} width="29" height="40"></img>
         <img src={SpringBoot} width="20" height="30"></img>
         <img src={Docker} width="29" height="40"></img>
         <img src={context.theme ? AWSLight : AWS} width="29" height="40"></img>
-        <a href="https://github.com/demardefrozen10/RateMySupps" target="_blank" rel="noopener noreferrer">
+        <a href="https://ratemysupp.com" target="_blank" rel="noopener noreferrer">
         <button className={`${context.theme ? "dark" : ""} cursor-pointer inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-500/20 hover:bg-gray-500/10 h-10 px-4 py-2 relative rounded-full dark:bg-neutral-800`}>
-        <img src={context.theme ? GitHubWhite : Github} className="w-5 h-5 min-w-[20px] min-h-[20px]" style={{width: '20px', height: '20px'}} alt="GitHub" />
+        <img src={context.theme ? ExternalLinkLite : ExternalLink} width="20"></img>
         </button>
         </a>
         </div>
