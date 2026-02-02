@@ -70,8 +70,8 @@ function Home() {
   return (
     <>
         <main className="max-w-3xl mx-auto px-4 pt-32">
-          <h1 className={`text-xl font-medium pb-3 ml-2 flex flex-col md:flex-row md:items-center gap-2${context.theme ? " text-white" : ""}`}>Hello there [name], welcome to my page!  <img src={Turtle} width="40" className="ml-2"></img> </h1>
-          <p className={`ml-2 text-md${context.theme ? " text-white" : ""}`}> I'm an inspiring Software Engineer currently studying Computer Science at York University. I love working on projects that create a everlasting impact on thousands of users. Currently, I am learning best system design practices and more about AI.
+          <h1 className={`text-xl font-medium pb-3 ml-2 flex flex-col md:flex-row md:items-center gap-2${context.theme ? " text-white" : ""}`}>Hello there, welcome to my page!  <img src={Turtle} width="40" className="ml-2"></img> </h1>
+          <p className={`ml-2 text-md${context.theme ? " text-white" : ""}`}> I'm an inspiring Software Engineer currently studying Computer Science at York University. I love working on projects that create a everlasting impact on thousands of users. I am currently learning more about system design and studying for the AWS Solutions Architect certification.
           </p>
           <div className="grid gap-6 md:grid-cols-7 md:grid-rows-2 mt-5 ml-2">
           <div className={`${context.theme ? "dark" : ""} motion-preset-blur-up-md motion-delay-100 relative col-span-4 row-span-1 row-start-1 h-full overflow-hidden rounded-xl ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:col-span-2 md:col-start-1 md:row-span-2 md:h-full transition-transform duration-300 hover:scale-105`}>
