@@ -23,13 +23,14 @@ export default function Experience() {
          <div className={`${context.theme ? "dark" : ""} relative w-full overflow-hidden rounded-xl bg-white/75 dark:bg-zinc-900/90 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-black dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:p-6 motion-preset-blur-up-md motion-delay-0 transition-transform duration-300 hover:scale-105`}>
     <div className="flex justify-between items-center">
     <img src={YorkU} height="50" width="60" className="pb-1"></img>
-    <p className={`${context.theme ? "dark" : ""} dark:text-neutral-200`}>Sept. 2025 - Present</p>
+    <p className={`${context.theme ? "dark" : ""} dark:text-neutral-200`}>Sept. 2025 - Apr. 2026</p>
     </div>
     <h1 className={`${context.theme ? "dark" : ""} pb-1 dark:text-white`}>Programmer Assistant</h1>
     <p className={`${context.theme ? "dark" : ""} dark:text-neutral-200`}>York Unversity - Faculty of Liberal Arts & Professional Studies • Part-Time</p>
     <p className={`${context.theme ? "dark" : ""} pt-1 dark:text-neutral-200`}>Toronto, Canada</p>
     <div className={`${context.theme ? "dark" : ""} text-gray-500 dark:text-neutral-300`}>
     <p className="pt-2 ">Working in eLearning Services, eServices Office.</p>
+        <p className="mt-6">• Mainly worked on Microsoft Power Automate flows to streamline project submissions for students. </p>
 </div>
     </div>
     <div className={`${context.theme ? "dark" : ""} relative w-full overflow-hidden rounded-xl bg-white/75 dark:bg-zinc-900/90 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-black dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:p-6 motion-preset-blur-up-md motion-delay-0 transition-transform duration-300 hover:scale-105`}>
@@ -37,13 +38,13 @@ export default function Experience() {
     <img src={RBCBorealis} height="50" width="60" className="pb-1"></img>
     <p className={`${context.theme ? "dark" : ""} dark:text-neutral-200`}>Jan. 2025 - Aug. 2025</p>
     </div>
-    <h1 className={`${context.theme ? "dark" : ""} pb-1 dark:text-white`}>Data Engineer Intern</h1>
+    <h1 className={`${context.theme ? "dark" : ""} pb-1 dark:text-white`}>Software Developer Intern</h1>
     <p className={`${context.theme ? "dark" : ""} dark:text-neutral-200`}>RBC Borealis • Internship</p>
     <p className={`${context.theme ? "dark" : ""} pt-1 dark:text-neutral-200`}>Toronto, Canada</p>
     <div className={`${context.theme ? "dark" : ""} text-gray-500 dark:text-neutral-300`}>
     <p className="pt-2 ">Worked as a Data Engineer Intern at Royal Bank of Canada's AI and innovation subsidary under Transaction Services Data Solutions team.</p>
-        <p className="mt-6">• Performed various Data Analysis tasks with over 1B+ records, joining, filtering, and aggregating datasets utilizing
-Spark Scala to enhance logic for data pipelines.</p>
+        <p className="mt-6">• Created new ETL pipeline for data profiler using Apache Spark and scheduled job to run everyday using CRON, sent email everyday to engineers on the team using Bash. </p>
+        <p>• Contributed to several data pipelines which included a PyCryptodome decrypter that decrypts over 100K+ encrypted values in Laravel.</p>
     <p className="mt-1">• Setup Jupyter Notebook environment on developer virtual machine environment and connected to Cloudera Data
 Platform YARN cluster to perform Spark transformations.</p>
 </div>
@@ -59,10 +60,8 @@ Platform YARN cluster to perform Spark transformations.</p>
         <div className={`${context.theme ? "dark" : ""} text-gray-500 dark:text-neutral-300`}>
 
     <p className="pt-2">Worked as a Software Developer Intern under Position Management team at Dayforce, a leading disrupter in human resources software and services.</p>
-    <p className="mt-6">• Implemented CRUD operations for a Salary Protection feature using EF Core and designed API endpoints with
-ASP.NET Core using repository pattern for maintainable, scalable, and testable code.</p>
-    <p className="mt-1">• Developed integration tests for backend and frontend using SpecFlow (Gherkin) and Cypress, ensuring 100% code
-coverage and stability.</p>
+    <p className="mt-6">• Contributed to new the new feature salary protection type. This included CRUD operations in ASP.NET Core to create a salary protection type as well as internal logic to modify an employee's record when a salary protection period if in-effect.</p>
+    <p className="mt-1">• Developed integration tests for backend using SpecFlow and Gherkin syntax and created automated UI testing with Cypress.</p>
     <p className="mt-1">• Triaged and resolved 10+ customer-reported bugs, utilizing Git commands for collaboration, code reviews, and
 merging fixes into the main branch.</p>
 </div>
@@ -98,7 +97,17 @@ merging fixes into the main branch.</p>
         <div className={`${context.theme ? "dark" : ""} text-gray-500 dark:text-neutral-300`}>
 
     <p className="pt-2 ">Part of the executive team on York University's Computing Hub club.</p>
-        <p className="mt-6">• To be determined.</p>
+        <p className="mt-6">  • I am mainly working on the{" "}
+  <a
+    href="https://www.cshub.tech/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200"
+  >
+    cshub.tech
+  </a>{" "}
+  website!</p>
+          <p className="mt-1">  • People on this club are very cool!! I highly recommend joining clubs!!</p>
     </div>
     
     </div>
@@ -126,7 +135,7 @@ merging fixes into the main branch.</p>
     <p className={`${context.theme ? "dark" : ""} dark:text-neutral-200`}>Toronto District School Board • Volunteer</p>
         <div className={`${context.theme ? "dark" : ""} text-gray-500 dark:text-neutral-300`}>
 
-    <p className="pt-2 ">Helped volunteer for international languages program in highschool in order to fufill highschool volunteer hour</p>
+    <p className="pt-2 ">Helped volunteer for international languages program in highschool in order to fufill highschool volunteer hour.</p>
     </div>
     
     </div>
