@@ -3,6 +3,7 @@ import Home from './Home.jsx';
 import { HashRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import Logo from './Logo.jsx';
 import Projects from './Projects.jsx';
+import Blogs from './Blogs.jsx';
 import ScrollToTop from './ScrollToTop.jsx';
 import {useContext} from 'react';
 import { ThemeContext } from './ThemeContext.jsx';
@@ -18,8 +19,8 @@ export default function Navigation() {
         <ScrollToTop/>
          <div className="fixed inset-x-4 top-7 z-40">
       <div className={`${context.theme ? "dark" : ""} absolute inset-0 bg-gradient-to-b from-white/75 to-white/0 dark:from-zinc-900/75 dark:to-zinc-900/0`} />
-      <nav className={`${context.theme ? "dark" : ""} fixed inset-x-4 top-7 z-40 mx-auto flex max-w-3xl items-center justify-between gap-2 overflow-hidden rounded-full border-4 border-zinc-100 bg-white/80 px-7 py-4 shadow backdrop-blur-md dark:border-4 dark:border-zinc-700 dark:bg-zinc-900/80`}>
-            <div className="flex items-center gap-6">
+      <nav className={`${context.theme ? "dark" : ""} fixed inset-x-4 top-7 z-40 mx-auto flex max-w-3xl items-center justify-between gap-2 overflow-hidden rounded-full border-4 border-zinc-100 bg-white/80 px-4 py-4 shadow backdrop-blur-md dark:border-4 dark:border-zinc-700 dark:bg-zinc-900/80 sm:px-7`}>
+            <div className="flex items-center gap-2 sm:gap-6">
                 <NavLink to="/" className="flex items-center gap-3">
                     <Logo />
                 </NavLink>
@@ -67,6 +68,20 @@ export default function Navigation() {
                             Projects
                         </NavLink>
                     </li>
+                    {/* <li>
+                        <NavLink
+                            to="/blogs"
+                            className={({ isActive }) =>
+                                `text-sm font-medium px-3 py-1 rounded-full transition-colors ${
+                                    isActive
+                                        ? 'bg-zinc-100 text-zinc-900'
+                                        : 'text-zinc-800 hover:text-zinc-600 dark:text-zinc-200 dark:hover:text-zinc-400'
+                                }`
+                            }
+                        >
+                            Blog
+                        </NavLink>
+                    </li> */}
                 </ul>
             </div>
             <button
@@ -90,6 +105,7 @@ export default function Navigation() {
             <Route path="/" element={<Home />} />
             <Route path="/experience" element={<Experience/>}/>
             <Route path="/projects" element={<Projects/>}/>
+            <Route path="/blogs" element={<Blogs/>}/>
 
         </Routes>
     </Router>

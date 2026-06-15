@@ -1,4 +1,5 @@
 import RBCBorealis from './assets/rbc_borealis.jpg';
+import Hootsuite from './assets/Hootsuite.jpg';
 import Dayforce from './assets/Dayforce.jpg';
 import TTC from './assets/TTC.png';
 import GDSC from './assets/gdsc.png';
@@ -22,6 +23,19 @@ export default function Experience() {
     <div className="max-w-3xl mx-auto px-4 flex justify-center flex-col gap-11">
          <div className={`${context.theme ? "dark" : ""} relative w-full overflow-hidden rounded-xl bg-white/75 dark:bg-zinc-900/90 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-black dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:p-6 motion-preset-blur-up-md motion-delay-0 transition-transform duration-300 hover:scale-105`}>
     <div className="flex justify-between items-center">
+    <img src={Hootsuite} height="50" width="60" className="pb-1"></img>
+    <p className={`${context.theme ? "dark" : ""} dark:text-neutral-200`}>May. 2026 - Present</p>
+    </div>
+    <h1 className={`${context.theme ? "dark" : ""} pb-1 dark:text-white`}>Software Developer Intern</h1>
+    <p className={`${context.theme ? "dark" : ""} dark:text-neutral-200`}>Hootsuite, Inc. • Internship</p>
+    <div className={`${context.theme ? "dark" : ""} text-gray-500 dark:text-neutral-300`}>
+    <p className="pt-2">Working as a Software Developer Intern under the billing team at Hootsuite, a leading SaaS for social media management.</p>
+    <p className="mt-6">• Working on an AI slack bot to automatically triage and give developers insights and most likely root causes for new bugs reported, utilizing SumoLogic and Github MCP servers for information retrieval.</p>
+    <p className="mt-1">• Leading the way in cleaning up code for legacy Aria payment systems across billing service Scala platform, our frontend signup, billing pages, and the monolith dashboard.</p>
+</div>
+    </div>
+         <div className={`${context.theme ? "dark" : ""} relative w-full overflow-hidden rounded-xl bg-white/75 dark:bg-zinc-900/90 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-black dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:p-6 motion-preset-blur-up-md motion-delay-0 transition-transform duration-300 hover:scale-105`}>
+    <div className="flex justify-between items-center">
     <img src={YorkU} height="50" width="60" className="pb-1"></img>
     <p className={`${context.theme ? "dark" : ""} dark:text-neutral-200`}>Sept. 2025 - Apr. 2026</p>
     </div>
@@ -29,7 +43,7 @@ export default function Experience() {
     <p className={`${context.theme ? "dark" : ""} dark:text-neutral-200`}>York Unversity - Faculty of Liberal Arts & Professional Studies • Part-Time</p>
     <p className={`${context.theme ? "dark" : ""} pt-1 dark:text-neutral-200`}>Toronto, Canada</p>
     <div className={`${context.theme ? "dark" : ""} text-gray-500 dark:text-neutral-300`}>
-    <p className="pt-2 ">Working in eLearning Services, eServices Office.</p>
+    <p className="pt-2 ">Worked in eLearning Services, eServices Office.</p>
         <p className="mt-6">• Mainly worked on Microsoft Power Automate flows to streamline project submissions for students. </p>
 </div>
     </div>
@@ -42,7 +56,7 @@ export default function Experience() {
     <p className={`${context.theme ? "dark" : ""} dark:text-neutral-200`}>RBC Borealis • Internship</p>
     <p className={`${context.theme ? "dark" : ""} pt-1 dark:text-neutral-200`}>Toronto, Canada</p>
     <div className={`${context.theme ? "dark" : ""} text-gray-500 dark:text-neutral-300`}>
-    <p className="pt-2 ">Worked as a Data Engineer Intern at Royal Bank of Canada's AI and innovation subsidary under Transaction Services Data Solutions team.</p>
+    <p className="pt-2 ">Worked as a Software Developer Intern (Big Data) at Royal Bank of Canada's AI and innovation subsidary under Transaction Services Data Solutions team.</p>
         <p className="mt-6">• Created new ETL pipeline for data profiler using Apache Spark and scheduled job to run everyday using CRON, sent email everyday to engineers on the team using Bash. </p>
         <p>• Contributed to several data pipelines which included a PyCryptodome decrypter that decrypts over 100K+ encrypted values in Laravel.</p>
     <p className="mt-1">• Setup Jupyter Notebook environment on developer virtual machine environment and connected to Cloudera Data
