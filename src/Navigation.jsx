@@ -85,7 +85,7 @@ export default function Navigation() {
                 </ul>
             </div>
             <button
-                className="rounded-full bg-zinc-100 p-2 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
+                className="cursor-pointer rounded-full bg-zinc-100 p-2 transition-colors hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
                 onClick={handleThemeChange}
             >
                 <span className="sr-only">Toggle theme</span>

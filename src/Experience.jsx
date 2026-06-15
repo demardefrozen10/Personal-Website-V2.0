@@ -18,7 +18,7 @@ export default function Experience() {
     return <>
     <div className="max-w-3xl mx-auto px-4 pt-32">
         <h1 className={`${context.theme ? "dark" : ""} text-xl font-medium pb-3 dark:text-white`}>Work Experience</h1>
-        <p className={`${context.theme ? "dark" : ""} pb-7 dark:text-neutral-300`}>This is my current work experience. I am in my 3rd year of Computer Science at York University so far!</p>
+        <p className={`${context.theme ? "dark" : ""} pb-7 dark:text-neutral-300`}>This is my current work experience. I am in my 4th year of Computer Science at York University so far! Incredibly blessed to have these opportunities listed below.</p>
     </div>
     <div className="max-w-3xl mx-auto px-4 flex justify-center flex-col gap-11">
          <div className={`${context.theme ? "dark" : ""} relative w-full overflow-hidden rounded-xl bg-white/75 dark:bg-zinc-900/90 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-black dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:p-6 motion-preset-blur-up-md motion-delay-0 transition-transform duration-300 hover:scale-105`}>
@@ -89,7 +89,7 @@ merging fixes into the main branch.</p>
     <p className={`${context.theme ? "dark" : ""} dark:text-neutral-200`}>Toronto Transit Commission • Summer Student</p>
     <p className={`${context.theme ? "dark" : ""} pt-1 dark:text-neutral-200`}>Toronto, Canada</p>
         <div className={`${context.theme ? "dark" : ""} text-gray-500 dark:text-neutral-300`}>
-    <p className="pt-2">Slaved away cleaning toilets, mopping floors, taking out garbage, and doing manual labour work. (Do not recommend).</p>
+    <p className="pt-2">Slaved away cleaning toilets, mopping floors, taking out garbage, and doing manual labour work.</p>
         <p className="mt-6">• Scrubbed and cleaned toilets daily.</p>
     <p className="mt-1">• Picked up garbage, scrubed more toilets, and cleaned washrooms.</p>
     <p className="mt-1">• Performed manual labour work, scrubed more toilets, and cleaned more washrooms.</p>

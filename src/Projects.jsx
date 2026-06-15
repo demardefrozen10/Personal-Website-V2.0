@@ -44,7 +44,7 @@ export default function Projects() {
         <img src={context.theme ? GEMINI_ICON_DARK : GEMINI_ICON_LIGHT} width="20" height="30"></img>
         <img src={DOCKER_ICON} width="29" height="40"></img>
         <img src={context.theme ? SQLiteDark : SQLite} width="29" height="40"></img>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a href="https://devpost.com/software/aaj" target="_blank" rel="noopener noreferrer">
         <button className={`${context.theme ? "dark" : ""} cursor-pointer inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-500/20 hover:bg-gray-500/10 h-10 px-4 py-2 relative rounded-full dark:bg-neutral-800`}>
         <img src={context.theme ? ExternalLinkLite : ExternalLink} width="20"></img>
         </button>
@@ -61,7 +61,7 @@ export default function Projects() {
         <img src={RateMySupps}></img>
         <div className="flex flex-col m-5 gap-3">
             <div className="flex items-center justify-between gap-2">
-        <p className={`${context.theme ? "dark" : ""} text-lg font-medium dark:text-neutral-300`}>RateMySupp</p>
+        <p className={`${context.theme ? "dark" : ""} text-lg font-medium dark:text-neutral-300`}>RateMySupplement</p>
         <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3">
         <img src={Typescript} className="w-6 h-6 sm:w-[29px] sm:h-10 md:w-8 md:h-8 object-contain"></img>
         <img src={SpringBoot} className="w-5 h-5 sm:w-5 sm:h-[30px] md:w-6 md:h-6 object-contain"></img>

@@ -27,6 +27,10 @@ import WhiteScala from '../src/assets/scalawhite.svg'
 import WhiteTime from '../src/assets/whiteTime.png'
 import WhiteGlobe from '../src/assets/whiteGlobe.png'
 import BlackGithub from '../src/assets/github-mark.svg'
+import UpworkDark from '../src/assets/upworkdark.png'
+import UpworkWhite from '../src/assets/upworkwhite.png'
+import LeetCodeBright from '../src/assets/leetcodebright.png'
+import LeetCodeDark from '../src/assets/leetcodedark.png'
 
 
 function Home() {
@@ -51,6 +55,40 @@ function Home() {
     {
       image: G1Test
     }
+  ];
+
+  const favoriteCourses = [
+    {
+      code: "EECS 3221",
+      name: "Operating Systems",
+      shortName: "Operating Systems",
+      focus: "Studying how operating systems function, including process management, memory management, and file systems. Deadlock prevention, synchronization, and concurrency are also covered in depth.",
+    },
+    {
+      code: "EECS 3101",
+      name: "Design and Analysis of Algorithms",
+      shortName: "Algorithms",
+      focus: "Study of algorithms and runtime analysis ranging from topics such as dijkstra's, dynamic programming, greedy algorithms, master theorem, and more.",
+    },
+  ];
+
+  const interests = [
+    {
+      title: "Distributed Systems & System Design",
+      description: "Through Grokking the Systems Design Interview course, I developed a deeper understanding of designing scalable and reliable distributed systems.",
+    },
+    {
+      title: "Data Structures & Algorithms",
+      description: "Exploring the design and analysis of data structures and algorithms, including sorting, searching, graph algorithms, and optimization techniques.",
+    },
+    {
+      title: "Frontend Development",
+      description: "Building responsive and interactive user interfaces using modern JavaScript frameworks and libraries particularly using React.",
+    },
+    {
+      title: "Cloud Computing",
+      description: "Learning how applications are deployed, monitored, scaled, and made resilient in production, particiularly on AWS, with courses and certifications on AWS Solutions Architect Associate.",
+    },
   ];
 
   const [currentTime, setCurrentTime] = useState(() => {
@@ -104,7 +142,7 @@ function Home() {
       </div>
       
       <div className="absolute inset-0 bg-gradient-to-t from-white/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>         </div>
-          <div className={`${context.theme ? "dark" : ""} motion-preset-blur-up-md motion-preset-rebound-up relative col-span-5 col-start-5  row-span-1 row-start-1 gap-6 overflow-hidden rounded-xl bg-white/75 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 motion-delay-100 dark:bg-black dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:col-span-3 md:col-start-3 md:row-span-1 transition-transform duration-300 hover:scale-105`}>
+          <div className={`${context.theme ? "dark" : ""} motion-preset-blur-up-md motion-preset-rebound-up relative col-span-5 col-start-5 row-span-1 row-start-1 gap-6 overflow-hidden rounded-xl bg-white/75 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 motion-delay-100 dark:bg-black dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:col-span-3 md:col-start-3 md:row-span-1 md:row-start-1 transition-transform duration-300 hover:scale-105`}>
 <div className="absolute inset-0 w-full h-full flex items-center justify-center md:justify-end md:pr-5">
   <div className="scale-200 md:scale-180">
     <SpinningGlobe />
@@ -163,26 +201,21 @@ function Home() {
           </div>
           </div>
           <div className="col-span-4 col-start-6 row-start-3 flex h-full flex-col justify-between gap-6 md:col-span-2 md:col-start-3 md:row-start-2">
-          <a href="https://www.linkedin.com/in/jason-deng10/" target="_blank" rel="noopener noreferrer" className={`${context.theme ? "dark" : ""} bg-blue-800 motion-preset-blur-up-md motion-delay-150 motion-preset-rebound-up relative col-span-2 col-start-3 row-start-2 h-full w-full gap-6 overflow-hidden rounded-xl p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 transition-transform duration-300 hover:scale-105`}>
-            <a className="flex items-center justify-center gap-2 mt-1">
+          <a href="https://www.linkedin.com/in/jason-deng10/" target="_blank" rel="noopener noreferrer" className={`${context.theme ? "dark" : ""} flex h-full w-full items-center justify-center gap-2 overflow-hidden rounded-xl bg-blue-800 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 motion-preset-blur-up-md motion-delay-150 motion-preset-rebound-up transition-transform duration-300 hover:scale-105`}>
           <img 
               src={LinkedinIcon} 
-              alt="Github" 
+              alt="LinkedIn" 
               className="h-8 w-8 shrink-0 md:h-5 md:w-5"
             />          
             <p className="hidden md:flex md:text-sm text-white mt-0.5">Linkedin</p>
-            </a>
           </a>
-          <a href="https://github.com/demardefrozen10" target="_blank" rel="noopener noreferrer" className={`${context.theme ? "dark" : ""} dark:bg-white bg-black motion-preset-blur-up-md motion-delay-150 motion-preset-rebound-up relative col-span-2 col-start-3 row-start-2 h-full w-full gap-6 overflow-hidden rounded-xl p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 transition-transform duration-300 hover:scale-105`}>
-          <a className="flex items-center justify-center gap-2 mt-1">
+          <a href="https://github.com/demardefrozen10" target="_blank" rel="noopener noreferrer" className={`${context.theme ? "dark" : ""} flex h-full w-full items-center justify-center gap-2 overflow-hidden rounded-xl bg-black p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-white dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 motion-preset-blur-up-md motion-delay-150 motion-preset-rebound-up transition-transform duration-300 hover:scale-105`}>
           <img 
               src={context.theme ? BlackGithub : GithubIcon} 
-              alt="Github" 
+              alt="GitHub" 
               className="h-8 w-8 shrink-0 md:h-5 md:w-5"
             />          
-            <p className={`hidden md:flex md:text-sm text-white mt-0.5 dark:text-black`}>Github</p>
-            </a>
-
+            <p className="hidden md:flex md:text-sm text-white mt-0.5 dark:text-black">Github</p>
           </a>
           </div>
           <a href="#/projects" className={`${context.theme ? "dark" : ""} motion-preset-blur-up-md motion-delay-150 motion-preset-rebound-up relative col-span-9 col-start-1 row-span-1 row-start-2 flex h-full max-h-56 cursor-pointer gap-6 overflow-hidden rounded-xl bg-white/75 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-muted/80 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 md:col-span-3 md:col-start-5 md:row-start-2 md:h-40 transition-transform duration-300 hover:scale-105`}>
@@ -201,6 +234,55 @@ function Home() {
           ))}
         </Slider>
           </a>
+          <div className="col-span-4 col-start-6 row-start-4 flex flex-col gap-6 md:col-span-2 md:col-start-3 md:row-start-3">
+          <a href="https://leetcode.com/u/demardefrozen" target="_blank" rel="noopener noreferrer" className={`${context.theme ? "dark" : ""} flex h-16 w-full items-center justify-center gap-2 overflow-hidden rounded-xl bg-white p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-amber-500 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 motion-preset-blur-up-md motion-delay-150 motion-preset-rebound-up transition-transform duration-300 hover:scale-105`}>
+          <img
+              src={context.theme ? LeetCodeBright : LeetCodeDark}
+              alt="LeetCode"
+              className="h-8 w-8 shrink-0 object-contain md:h-5 md:w-5"
+            />
+            <p className="hidden md:flex md:text-sm text-zinc-900 mt-0.5 dark:text-black">LeetCode</p>
+          </a>
+          <a href="https://www.upwork.com/freelancers/~01882c43bcb498b9aa" target="_blank" rel="noopener noreferrer" className={`${context.theme ? "dark" : ""} flex h-16 w-full items-center justify-center gap-2 overflow-hidden rounded-xl bg-white p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-emerald-600 dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 motion-preset-blur-up-md motion-delay-150 motion-preset-rebound-up transition-transform duration-300 hover:scale-105`}>
+          <img
+              src={context.theme ? UpworkWhite : UpworkDark}
+              alt="Upwork"
+              className="h-8 w-8 shrink-0 object-contain md:h-5 md:w-5"
+            />
+            <p className="hidden md:flex md:text-sm text-emerald-700 mt-0.5 dark:text-white">Upwork</p>
+          </a>
+          </div>
+          <div className={`${context.theme ? "dark" : ""} col-span-5 col-start-1 row-start-4 h-[152px] rounded-xl bg-white/75 p-4 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-black dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 motion-preset-blur-up-md motion-delay-150 transition-transform duration-300 hover:scale-105 md:col-span-2 md:col-start-1 md:row-start-3`}>
+            <h2 className={`${context.theme ? "dark" : ""} text-base font-semibold text-gray-900 dark:text-white`}>
+              Favourite courses
+            </h2>
+            <ul className={`${context.theme ? "dark" : ""} mt-3 space-y-1.5 text-sm text-gray-700 dark:text-neutral-300`}>
+              {favoriteCourses.map((course) => (
+                <li
+                  key={course.code}
+                  className="leading-5"
+                >
+                  <span className="font-medium text-gray-900 dark:text-white">{course.code}</span>
+                  <span className="text-gray-500 dark:text-neutral-400"> - {course.shortName}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className={`${context.theme ? "dark" : ""} mt-1 col-span-9 col-start-1 row-start-5 -mt-3 h-auto rounded-xl bg-white/75 p-6 ring-1 ring-neutral-200 ring-offset-8 ring-offset-neutral-100 dark:bg-black dark:ring-neutral-400/10 dark:ring-offset-neutral-400/10 motion-preset-blur-up-md motion-delay-150 transition-transform duration-300 hover:scale-105 md:col-span-3 md:col-start-5 md:row-start-3 md:mt-0 md:h-[152px] md:p-4`}>
+            <h2 className={`${context.theme ? "dark" : ""} text-base font-semibold text-gray-900 dark:text-white text-sm`}>
+              Interests within SWE & CS
+            </h2>
+            <ul className={`${context.theme ? "dark" : ""} mt-2 grid gap-x-4 gap-y-1 text-sm text-gray-700 dark:text-neutral-300 sm:grid-cols-2`}>
+              {interests.map((interest) => (
+                <li
+                  key={interest.title}
+                  className="leading-5"
+                >
+                  {interest.title}
+                </li>
+              ))}
+            </ul>
+          </div>
           </div>
         </main>
     </>
