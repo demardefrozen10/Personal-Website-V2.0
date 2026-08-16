@@ -1,10 +1,16 @@
-import {createContext, useState} from 'react';
+import {createContext, useEffect, useState} from 'react';
 
 export const ThemeContext = createContext(null);
 
 
 export function ThemeProvider(props) {
     const [theme, setTheme] = useState(localStorage.getItem("theme") || "");
+
+    useEffect(() => {
+        const isDark = theme === "dark";
+
+        document.documentElement.classList.toggle("dark", isDark);
+    }, [theme]);
 
     const handleThemeChange = () => {
         if (theme === "") {
